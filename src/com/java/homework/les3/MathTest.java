@@ -12,7 +12,8 @@ public class MathTest {
         int b = in.nextInt();
         System.out.println("Введіть чисо c");
         int c = in.nextInt();
-        System.out.println("[a-b]/(a+b)^3-√с = " + (java.lang.Math.abs(a - b) / java.lang.Math.pow((a + b), 3) - java.lang.Math.sqrt(c)));
+        double result = (java.lang.Math.abs(a - b) / java.lang.Math.pow((a + b), 3) - java.lang.Math.sqrt(c));
+        System.out.println("|a-b|/(a+b)^3-√с = " + result);
 
 
     }
