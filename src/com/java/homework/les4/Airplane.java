@@ -14,7 +14,7 @@ public class Airplane {
         System.out.println("input model");
         String model1 = in.readLine();
 
-        airplane(type1,model1);
+        airplane(type1, model1);
 
         System.out.println("create airplane 2");
         System.out.println("input type");
@@ -25,7 +25,7 @@ public class Airplane {
         int economyPassenger2 = Integer.parseInt(in.readLine());
 
 
-        airplane(type2,model2,economyPassenger2);
+        airplane(type2, model2, economyPassenger2);
 
         System.out.println("create airplane 3");
         System.out.println("input Type");
@@ -34,26 +34,26 @@ public class Airplane {
         String model3 = in.readLine();
         System.out.println("input Economy Passenger ");
         int economyPassenger3 = Integer.parseInt(in.readLine());
-        System.out.println("input Business Passenger " );
+        System.out.println("input Business Passenger ");
         int businessPassenger3 = Integer.parseInt(in.readLine());
 
 
-        airplane(type3,model3,economyPassenger3,businessPassenger3);
+        airplane(type3, model3, economyPassenger3, businessPassenger3);
 
     }
 
     public static void airplane(String type, String model) {
-        System.out.println("Type - " +type +", Model - "+ model);
+        System.out.println("Type - " + type + ", Model - " + model);
 
     }
 
     public static void airplane(String type, String model, int economyPassenger) {
-        System.out.println("Type - "+type+", Model - " + model +", Economy Passenger - "+ economyPassenger);
+        System.out.println("Type - " + type + ", Model - " + model + ", Economy Passenger - " + economyPassenger);
 
     }
 
     public static void airplane(String type, String model, int economyPassenger, int businessPassenger) {
-        System.out.println("Type  -"+type +", Model - "+ model +", Economy Passenger - "+ economyPassenger+", Business Passenger - " + businessPassenger);
+        System.out.println("Type  -" + type + ", Model - " + model + ", Economy Passenger - " + economyPassenger + ", Business Passenger - " + businessPassenger);
 
     }
 }
