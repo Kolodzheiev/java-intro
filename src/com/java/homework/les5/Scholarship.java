@@ -23,7 +23,15 @@ public class Scholarship {
         System.out.println("Введіть оцінку з фізики");
         int physics = Integer.parseInt(in.readLine());
 
-        double averageScore = calculateAverageScore(mathematics, history, biology, chemistry, physics);
+        if (mathematics < 0 || history < 0 || biology < 0 || chemistry < 0 || physics < 0){
+            System.out.println("Такої оцінки не існує");
+            return;
+        }else if (mathematics >12 || history >12 || biology >12 || chemistry >12 || physics >12) {
+            System.out.println("Є не існуючі оцінки");
+            return;
+        }
+
+            double averageScore = calculateAverageScore(mathematics, history, biology, chemistry, physics);
         System.out.println("Середній бал - " + averageScore);
 
         if (averageScore >= 10) {
