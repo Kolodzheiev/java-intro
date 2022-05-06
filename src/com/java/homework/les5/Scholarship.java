@@ -23,30 +23,43 @@ public class Scholarship {
         System.out.println("Введіть оцінку з фізики");
         int physics = Integer.parseInt(in.readLine());
 
-        if (mathematics < 0 || history < 0 || biology < 0 || chemistry < 0 || physics < 0){
-            System.out.println("Такої оцінки не існує");
-            return;
-        }else if (mathematics >12 || history >12 || biology >12 || chemistry >12 || physics >12) {
-            System.out.println("Є не існуючі оцінки");
+        if (!isGradesValid(mathematics, history, biology, chemistry, physics)) {
             return;
         }
 
-            double averageScore = calculateAverageScore(mathematics, history, biology, chemistry, physics);
+        double averageScore = calculateAverageScore(mathematics, history, biology, chemistry, physics);
         System.out.println("Середній бал - " + averageScore);
 
-        if (averageScore >= 10) {
-            System.out.println("Підвищена степендія");
-        } else if (averageScore < 10 && averageScore >= 8) {
-            System.out.println("Звичайна степендія");
-        } else if (averageScore < 8) {
-            System.out.println("Без степендії");
-        }
+        printScholarship(averageScore);
 
+    }
+
+    private static boolean isGradesValid(int mathematics, int history, int biology, int chemistry, int physics) {
+        if (mathematics < 0 || history < 0 || biology < 0 || chemistry < 0 || physics < 0) {
+            System.out.println("Такої оцінки не існує");
+            return false;
+        } else if (mathematics > 12 || history > 12 || biology > 12 || chemistry > 12 || physics > 12) {
+            System.out.println("Є не існуючі оцінки");
+            return false;
+        }
+        return true;
     }
 
 
     public static double calculateAverageScore(int mathematics, double history, int biology, int chemistry, int physics) {
         return (mathematics + history + biology + chemistry + physics) / 5;
     }
+
+    public static void printScholarship(double calculateAverageScore) {
+        if (calculateAverageScore >= 10) {
+            System.out.println("Підвищена степендія");
+        } else if (calculateAverageScore < 10 && calculateAverageScore >= 8) {
+            System.out.println("Звичайна степендія");
+        } else if (calculateAverageScore < 8) {
+            System.out.println("Без степендії");
+        }
+
+    }
+
 
 }
