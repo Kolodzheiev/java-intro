@@ -20,6 +20,7 @@ public class HandLuggage {
         boolean suitcase = checkingSuitcases(length, height, width);
 
         String message = suitcase ? "Ручна ккладь" : "Не ручна кладь";
+
         System.out.println(message);
 
 
