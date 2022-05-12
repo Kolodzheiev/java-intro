@@ -9,12 +9,12 @@ public class Factorial {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("input integer");
         int n = Integer.parseInt(in.readLine());
-        int result = factorial(n);
+        long result = factorial(n);
         System.out.println(result);
     }
 
-    public static int factorial(int n) {
-        int result = 1;
+    public static long factorial(int n) {
+        long result = 1;
         for (int i = 1; i <= n; i++) {
             result = result * i;
         }
