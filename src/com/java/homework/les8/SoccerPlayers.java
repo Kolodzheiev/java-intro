@@ -33,19 +33,21 @@ public class SoccerPlayers {
 
         }
     }
-    private static int calculateAverageAge(int[]players) {
+
+    private static int calculateAverageAge(int[] players) {
         int sum = 0;
         for (int j : players) {
             sum = (sum + j);
         }
-        return sum/ players.length;
+        return sum / players.length;
     }
+
     private static void compareAverageAge(float averageAge1, float averageAge2) {
-        if(averageAge1 < averageAge2){
+        if (averageAge1 < averageAge2) {
             System.out.println("Перша команда молодша");
-        }else if(averageAge1 > averageAge2){
+        } else if (averageAge1 > averageAge2) {
             System.out.println("Друга команда молодша");
-        }else {
+        } else {
             System.out.println("Команди однакові");
         }
     }
