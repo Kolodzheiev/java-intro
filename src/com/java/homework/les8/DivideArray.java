@@ -20,6 +20,7 @@ public class DivideArray {
         ConsoleUtils.print(firstArray, "Перша половинка");
         ConsoleUtils.print(secondArray, "Друга половинка");
     }
+
     private static void fillArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
             array[i] = ConsoleUtils.getNumber();
