@@ -8,7 +8,7 @@ public class ConsoleUtils {
 
     public static final BufferedReader READER = new BufferedReader(new InputStreamReader(System.in));
 
-
+// Рекурсія
     public static Integer getNumber() {
         try {
             System.out.println("Input number");
@@ -23,9 +23,21 @@ public class ConsoleUtils {
 
     }
 
-
+//print
     public static void print(int[] array, String message) {
         System.out.println(message + " " + Arrays.toString(array));
+    }
+
+//min max random
+    public static void generateNumbers(int[] numbers) {
+        for (int i = 0; i < numbers.length; i++) {
+            double random = Math.random();
+            int max = 45;
+            int min = 18;
+            int age = (int) ((random * (max - min)) + min);
+            numbers[i] = age;
+
+        }
     }
 
 }
