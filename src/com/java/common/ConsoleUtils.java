@@ -11,7 +11,7 @@ public class ConsoleUtils {
 // Рекурсія
     public static Integer getNumber() {
         try {
-            System.out.println("Input number");
+
             String str = READER.readLine();
             return Integer.parseInt(str);
         } catch (Exception exception) {
@@ -28,6 +28,11 @@ public class ConsoleUtils {
         System.out.println(message + " " + Arrays.toString(array));
     }
 
+
+    public static void print(String[] array, String message) {
+        System.out.println(message + " " + Arrays.toString(array));
+    }
+
 //min max random
     public static void generateNumbers(int[] numbers) {
         for (int i = 0; i < numbers.length; i++) {
@@ -40,4 +45,15 @@ public class ConsoleUtils {
         }
     }
 
+
+
+    public static String inString() {
+        try {
+            System.out.println("Input string");
+            return READER.readLine();
+        } catch (Exception exception) {
+            System.out.println("Error " + exception.getMessage());
+            return inString();
+        }
+    }
 }
