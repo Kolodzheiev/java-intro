@@ -81,6 +81,11 @@ public class ConsoleUtils {
             return getNumber();
         }
     }
+    public static void fillArray(int[] numbers) {
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = ConsoleUtils.getNumber();
+        }
+    }
 }
 
 

@@ -6,18 +6,17 @@ public class Zero {
     public static void main(String[] args) {
 
         System.out.println("Введіть размір масива");
-        int number = ConsoleUtils.getNumber();
+        int size = ConsoleUtils.getNumber();
         System.out.println("Заповніть масив");
 
-        int[] integer = new int[number];
-        for (int i = 0; i < integer.length; i++) {
-
-            integer[i] = ConsoleUtils.getNumber();
-        }
+        int[] numbers = new int[size];
+        ConsoleUtils.fillArray(numbers);
         // Arrays.sort(string);
-        sort(integer);
-        ConsoleUtils.print(integer, "");
+        sort(numbers);
+        ConsoleUtils.print(numbers, "");
     }
+
+
 
     private static void sort(int[] integer) {
         int temp = 0;
