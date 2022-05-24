@@ -14,12 +14,12 @@ public class Zero {
 
             integer[i] = ConsoleUtils.getNumber();
         }
-        //              Arrays.sort(string);
-        extracted(integer);
+        // Arrays.sort(string);
+        sort(integer);
         ConsoleUtils.print(integer, "");
     }
 
-    private static void extracted(int[] integer) {
+    private static void sort(int[] integer) {
         int temp = 0;
         for (int i = 0; i < integer.length; i++) {
             for (int j = 0; j < integer.length; j++) {

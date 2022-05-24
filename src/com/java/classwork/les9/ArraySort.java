@@ -4,10 +4,12 @@ import com.java.common.ConsoleUtils;
 
 import java.util.Arrays;
 
+import static com.java.common.ConsoleUtils.getNumber;
+
 public class ArraySort {
     public static void main(String[] args) {
         System.out.println("Введите размер массива");
-        int number = ConsoleUtils.getNumber();
+        int number = getNumber();
 
         int[] arrayRandom = new int[number];
         int min = 0;
