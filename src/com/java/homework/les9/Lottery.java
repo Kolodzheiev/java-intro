@@ -1,4 +1,4 @@
-package com.java.homework;
+package com.java.homework.les9;
 
 import com.java.common.ConsoleUtils;
 
