@@ -10,13 +10,13 @@ public class Code {
         System.out.println(number1 + "" + number2 + "" + number3 + "" + number4);
         int[] arrayCode = {number1, number2, number3, number4};
         int index = 0;
-        for (int i = 0; i < arrayCode.length; i++) {
+        for (int k : arrayCode) {
 
             for (int j = 0; j < 10; j++) {
                 index++;
-                if(arrayCode[i]==j) {
+                if (k == j) {
 
-                    System.out.println("Угадали число "+j);
+                    System.out.println("Угадали код" + j);
 
                     break;
                 }
