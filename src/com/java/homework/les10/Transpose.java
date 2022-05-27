@@ -29,7 +29,6 @@ public class Transpose {
             System.out.println();
         }
     }
-
     private static void transposeArray(int[][] array, int[][] arrayTranspose) {
         for (int i = 0; i < arrayTranspose.length; i++) {
             for (int j = 0; j < arrayTranspose[i].length; j++) {
@@ -37,7 +36,6 @@ public class Transpose {
             }
         }
     }
-
     public static void printArray(int n, int[][] array) {
         for (int[] ints : array) {
             for (int j = 0; j < n; j++) {
@@ -46,7 +44,6 @@ public class Transpose {
             System.out.println();
         }
     }
-
     private static void fillArray(int m, int n, int[][] array) {
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
