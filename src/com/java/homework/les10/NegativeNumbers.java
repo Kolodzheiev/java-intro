@@ -11,9 +11,9 @@ public class NegativeNumbers {
         int m = ConsoleUtils.getNumber();
         System.out.println("Введіть кількість стовбців масиву");
         int n = ConsoleUtils.getNumber();
-        int[][] array = new int[m][n];
+        int[][] array = fillArrayRandom(min, max, m, n);
 
-        fillArrayRandom(min, max, m, n, array);
+
 
         System.out.println("----------------------");
         System.out.println("Рандомний масив");
@@ -44,11 +44,13 @@ public class NegativeNumbers {
             System.out.println();
         }
     }
-    private static void fillArrayRandom(int min, int max, int m, int n, int[][] array) {
+    private static int[][] fillArrayRandom(int min, int max, int m, int n) {
+        int[][] array = new int[m][n];
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
                 array[i][j] = ConsoleUtils.random(min, max);
             }
         }
+        return array;
     }
 }
