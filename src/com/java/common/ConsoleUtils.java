@@ -57,15 +57,6 @@ public class ConsoleUtils {
         }
     }
 
-    public static Integer getNumberArray() {
-        try {
-            String str = READER.readLine();
-            return Integer.parseInt(str);
-        } catch (Exception exception) {
-            System.out.println("Error " + exception.getMessage());
-            return getNumber();
-        }
-    }
 
     public static Integer getNumber(int min, int max) {
         try {
