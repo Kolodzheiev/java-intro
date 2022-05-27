@@ -6,7 +6,7 @@ public class Factorial {
     public static void main(String[] args) {
         System.out.println("Введіть число для визначеня факторіала ");
         int N = ConsoleUtils.getNumber();
-        System.out.println(factorial(N));
+        System.out.println("Факторіал числа " + N + " дорівнює " + factorial(N));
 
     }
 
