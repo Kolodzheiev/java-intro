@@ -40,7 +40,7 @@ public class Transpose {
         }
     }
 
-    private static void printArray(int n, int[][] array) {
+    public static void printArray(int n, int[][] array) {
         for (int[] ints : array) {
             for (int j = 0; j < n; j++) {
                 System.out.print("   " + ints[j]);
