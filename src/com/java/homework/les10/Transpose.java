@@ -20,9 +20,7 @@ public class Transpose {
         transposeArray(array, arrayTranspose);
         System.out.println("Стало так");
         printTransposeArray(arrayTranspose);
-
     }
-
     private static void printTransposeArray(int[][] arrayTranspose) {
         for (int[] ints : arrayTranspose) {
             for (int anInt : ints) {
