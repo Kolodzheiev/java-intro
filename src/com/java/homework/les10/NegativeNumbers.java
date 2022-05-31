@@ -44,7 +44,7 @@ public class NegativeNumbers {
             System.out.println();
         }
     }
-    private static int[][] fillArrayRandom(int min, int max, int m, int n) {
+    public static int[][] fillArrayRandom(int min, int max, int m, int n) {
         int[][] array = new int[m][n];
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {

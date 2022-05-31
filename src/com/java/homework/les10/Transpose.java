@@ -36,9 +36,9 @@ public class Transpose {
             }
         }
     }
-    public static void printArray(int n, int[][] array) {
+    public static void printArray(int n ,int[][] array) {
         for (int[] ints : array) {
-            for (int j = 0; j < n; j++) {
+            for (int j = 0; j < array[0].length; j++) {
                 System.out.print("   " + ints[j]);
             }
             System.out.println();
