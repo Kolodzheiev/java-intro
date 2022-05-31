@@ -14,6 +14,11 @@ public class Cat {
         this.weight = weight;
 
     }
+    public Cat(String name,int age){
+        this.name = name;
+        this.age = age;
+
+    }
 
     public Cat(String name, String breed, int age, int weight){
         this.name = name;
