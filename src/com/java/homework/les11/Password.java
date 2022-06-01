@@ -3,7 +3,7 @@ package com.java.homework.les11;
 
 import com.java.common.ConsoleUtils;
 
-import java.util.Arrays;
+
 
 public class Password {
     public static void main(String[] args) {
