@@ -8,7 +8,9 @@ import java.util.Arrays;
 public class Password {
     public static void main(String[] args) {
         String[] arrayPassword = getPassword();
-        System.out.println(Arrays.toString(arrayPassword));
+        String stringPassword = String.join("", arrayPassword);
+        System.out.println("---PASSWORD---");
+        System.out.println(stringPassword);
 
 
     }
