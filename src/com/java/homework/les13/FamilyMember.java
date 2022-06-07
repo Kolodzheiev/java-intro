@@ -20,9 +20,9 @@ public class FamilyMember {
         String fatherInfo = father != null ? "" + father.name : "Немає батька";
         String motherInfo = mother != null ? "" + mother.name : "Немає мати";
         return
-                "Name: " + name
-                        + ";  Mother: " + motherInfo
-                        + "; Father: " + fatherInfo;
+                "Child " + name
+                        + ";  Mother " + motherInfo
+                        + "; Father " + fatherInfo;
     }
 
 }

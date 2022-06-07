@@ -23,6 +23,6 @@ public class FamilyMemberRun {
 
         FamilyMember child = new FamilyMember(name, familyMemberMother, familyMemberFather);
 
-        System.out.println(child);
+        System.out.println("Уся сім'я: " + child);
     }
 }
