@@ -9,12 +9,19 @@ public class TaxCalculator {
 
     public static void main(String[] args) {
         List<PropertyTax> propertyTaxes = new ArrayList<>();
+        System.out.println("Для виходу введіть exit, для продовженя будь яку клавішу");
+        while (!(ConsoleUtils.inString().equalsIgnoreCase("exit"))) {
+            PropertyTax property = createProperty();
+            propertyTaxes.add(property);
 
-        PropertyTax property = createProperty();
-        propertyTaxes.add(property);
-        System.out.println("Ваш податок = " + property.calculateTax());
-
+            System.out.println("Ваш податок = " + property.calculateTax());
+            System.out.println("Для виходу введіть exit, для продовженя будь яку клавішу");
+        }
+        for (PropertyTax tax : propertyTaxes) {
+            System.out.println(tax);
+        }
     }
+
     private static PropertyTax createProperty() {
 
         int subsidy = 0;
@@ -40,6 +47,7 @@ public class TaxCalculator {
         }
         return property;
     }
+
     private static int getPropertiesType() {
         System.out.println("Виберіть об'єкт нерухомості на який потрібно розрахувати податок");
         System.out.println("1 - Житлова нерухомість");
