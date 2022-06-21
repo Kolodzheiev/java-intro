@@ -39,24 +39,18 @@ public class MakingDrink {
 
     private static Drink createDrink() {
         int drinkType = getDrink();
-
-            Drink drinks = null;
-
-            switch (drinkType) {
-                case 1 -> drinks = new Tea("Black tea", PRICE_BLACK_TEA);
-                case 2 -> drinks = new Tea("Green tea", PRICE_GREEN_TEA);
-                case 3 -> drinks = new Coffee("Coffee with milk", PRICE_COFFEE_WITH_MILK);
-                case 4 -> drinks = new Coffee("Coffee without milk", PRICE_COFFEE_WITHOUT_MILK);
-                case 5 -> drinks = new Latte("Latte", PRICE_LATTE);
-                case 6 -> drinks = new Cappuccino("Cappuccino", PRICE_CAPPUCCINO);
-            }
-
-            return drinks;
+        Drink drinks = null;
+        switch (drinkType) {
+            case 1 -> drinks = new Tea("Black tea", PRICE_BLACK_TEA);
+            case 2 -> drinks = new Tea("Green tea", PRICE_GREEN_TEA);
+            case 3 -> drinks = new Coffee("Coffee with milk", PRICE_COFFEE_WITH_MILK);
+            case 4 -> drinks = new Coffee("Coffee without milk", PRICE_COFFEE_WITHOUT_MILK);
+            case 5 -> drinks = new Latte("Latte", PRICE_LATTE);
+            case 6 -> drinks = new Cappuccino("Cappuccino", PRICE_CAPPUCCINO);
         }
 
-
-
-
+        return drinks;
+    }
 
     private static int getDrink() {
         System.out.println("Виберіть напій який потрібно приготувати");
