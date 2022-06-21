@@ -1,4 +1,4 @@
-package com.java.homework.les14;
+package com.java.homework.les14.taxes;
 
 import com.java.common.ConsoleUtils;
 
@@ -15,6 +15,7 @@ public class TaxCalculator {
             propertyTaxes.add(property);
 
             System.out.println("Ваш податок = " + property.calculateTax());
+            System.out.println("Продовжити?");
             System.out.println("Для виходу введіть exit, для продовженя будь яку клавішу");
         }
         for (PropertyTax tax : propertyTaxes) {
@@ -53,8 +54,7 @@ public class TaxCalculator {
         System.out.println("1 - Житлова нерухомість");
         System.out.println("2 - Торгова нерухомість");
         System.out.println("3 - Виробнича нерухомість");
-        int property = ConsoleUtils.getNumber();
 
-        return property;
+        return ConsoleUtils.getNumber();
     }
 }

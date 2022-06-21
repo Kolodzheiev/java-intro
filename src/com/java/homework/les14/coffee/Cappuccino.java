@@ -1,0 +1,12 @@
+package com.java.homework.les14.coffee;
+
+public class Cappuccino extends Drink {
+    public Cappuccino(String name, double price) {
+        super(name, price);
+    }
+
+    @Override
+    public void prepare() {
+        System.out.println("prepare cappuccino");
+    }
+}

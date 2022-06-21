@@ -1,4 +1,4 @@
-package com.java.homework.les14;
+package com.java.homework.les14.taxes;
 
 public class PropertyTax {
     protected int square;
@@ -8,8 +8,6 @@ public class PropertyTax {
         this.square = square;
         this.taxPerSquareMeter = taxPerSquareMeter;
     }
-
-
 
     public double calculateTax() {
         return square * taxPerSquareMeter;
