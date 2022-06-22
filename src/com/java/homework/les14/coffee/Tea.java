@@ -5,8 +5,5 @@ public class Tea extends Drink{
             super(name, price);
         }
 
-        @Override
-        public void prepare() {
-            System.out.println("prepare tea");
-        }
+
 }

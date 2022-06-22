@@ -24,7 +24,6 @@ public class MakingDrink {
             Drink drink = createDrink();
             drinks.add(drink);
             drink.prepare();
-
             System.out.println("Щє щось?");
             System.out.println("Для виходу введіть exit, для продовженя будь яку клавішу");
         }
@@ -41,14 +40,13 @@ public class MakingDrink {
         int drinkType = getDrink();
         Drink drinks = null;
         switch (drinkType) {
-            case 1 -> drinks = new Tea("Black tea", PRICE_BLACK_TEA);
-            case 2 -> drinks = new Tea("Green tea", PRICE_GREEN_TEA);
-            case 3 -> drinks = new Coffee("Coffee with milk", PRICE_COFFEE_WITH_MILK);
-            case 4 -> drinks = new Coffee("Coffee without milk", PRICE_COFFEE_WITHOUT_MILK);
-            case 5 -> drinks = new Latte("Latte", PRICE_LATTE);
-            case 6 -> drinks = new Cappuccino("Cappuccino", PRICE_CAPPUCCINO);
+            case 1 -> drinks = new Tea("Чорний чай", PRICE_BLACK_TEA);
+            case 2 -> drinks = new Tea("Зелений чай", PRICE_GREEN_TEA);
+            case 3 -> drinks = new Coffee("Кава", PRICE_COFFEE_WITH_MILK,true);
+            case 4 -> drinks = new Coffee("Кава", PRICE_COFFEE_WITHOUT_MILK,false);
+            case 5 -> drinks = new Latte("Лате", PRICE_LATTE);
+            case 6 -> drinks = new Cappuccino("Капучіно", PRICE_CAPPUCCINO);
         }
-
         return drinks;
     }
 

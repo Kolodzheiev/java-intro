@@ -16,15 +16,12 @@ public class Drink {
     }
 
     public void prepare() {
-
-        System.out.println("prepare");
+        System.out.println(name + " готується");
     }
 
     @Override
     public String toString() {
-        return "Drink{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                '}';
+        return  name + ", ціна = " + price;
+
     }
 }
