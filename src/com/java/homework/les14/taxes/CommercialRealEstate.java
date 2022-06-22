@@ -1,6 +1,6 @@
 package com.java.homework.les14.taxes;
 
-public class CommercialRealEstate extends PropertyTax {
+public class CommercialRealEstate extends Property {
     protected static double MIN_PROCEEDS = 100;
     protected double proceeds;
 

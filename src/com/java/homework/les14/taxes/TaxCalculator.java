@@ -8,22 +8,22 @@ import java.util.List;
 public class TaxCalculator {
 
     public static void main(String[] args) {
-        List<PropertyTax> propertyTaxes = new ArrayList<>();
+        List<Property> propertyTaxes = new ArrayList<>();
         System.out.println("Для виходу введіть exit, для продовженя будь яку клавішу");
         while (!(ConsoleUtils.inString().equalsIgnoreCase("exit"))) {
-            PropertyTax property = createProperty();
+            Property property = createProperty();
             propertyTaxes.add(property);
 
             System.out.println("Ваш податок = " + property.calculateTax());
             System.out.println("Продовжити?");
             System.out.println("Для виходу введіть exit, для продовженя будь яку клавішу");
         }
-        for (PropertyTax tax : propertyTaxes) {
+        for (Property tax : propertyTaxes) {
             System.out.println(tax);
         }
     }
 
-    private static PropertyTax createProperty() {
+    private static Property createProperty() {
 
         int subsidy = 0;
         int proceeds = 0;
@@ -40,7 +40,7 @@ public class TaxCalculator {
             System.out.println("Введіть розмір виручкки");
             proceeds = ConsoleUtils.getNumber();
         }
-        PropertyTax property = null;
+        Property property = null;
         switch (propertyType) {
             case 1 -> property = new ResidentialProperties(square, taxPerSquareMeter, subsidy);
             case 2 -> property = new CommercialRealEstate(square, taxPerSquareMeter, proceeds);

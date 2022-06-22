@@ -1,6 +1,6 @@
 package com.java.homework.les14.taxes;
 
-public class ResidentialProperties extends PropertyTax {
+public class ResidentialProperties extends Property {
     protected double subsidy;
 
     public ResidentialProperties(int square, double taxPerSquareMeter, int subsidy) {
