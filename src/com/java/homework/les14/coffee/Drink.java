@@ -21,7 +21,6 @@ public class Drink {
 
     @Override
     public String toString() {
-        return  name + ", ціна = " + price;
-
+        return name + ", ціна = " + price;
     }
 }
