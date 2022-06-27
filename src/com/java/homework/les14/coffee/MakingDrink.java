@@ -38,16 +38,16 @@ public class MakingDrink {
 
     private static Drink createDrink() {
         int drinkType = getDrink();
-        Drink drinks = null;
+        Drink drink = null;
         switch (drinkType) {
-            case 1 -> drinks = new Tea("Чорний чай", PRICE_BLACK_TEA);
-            case 2 -> drinks = new Tea("Зелений чай", PRICE_GREEN_TEA);
-            case 3 -> drinks = new Coffee("Кава", PRICE_COFFEE_WITH_MILK,true);
-            case 4 -> drinks = new Coffee("Кава", PRICE_COFFEE_WITHOUT_MILK,false);
-            case 5 -> drinks = new Latte("Лате", PRICE_LATTE);
-            case 6 -> drinks = new Cappuccino("Капучіно", PRICE_CAPPUCCINO);
+            case 1 -> drink = new Tea("Чорний чай", PRICE_BLACK_TEA);
+            case 2 -> drink = new Tea("Зелений чай", PRICE_GREEN_TEA);
+            case 3 -> drink = new Coffee("Кава", PRICE_COFFEE_WITH_MILK,true);
+            case 4 -> drink = new Coffee("Кава", PRICE_COFFEE_WITHOUT_MILK,false);
+            case 5 -> drink = new Latte("Лате", PRICE_LATTE);
+            case 6 -> drink = new Cappuccino("Капучіно", PRICE_CAPPUCCINO);
         }
-        return drinks;
+        return drink;
     }
 
     private static int getDrink() {
