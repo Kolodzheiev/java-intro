@@ -27,10 +27,8 @@ public class Converter {
         Convertable converterTemperature;
         if(temperatureScale.equalsIgnoreCase("F")){
             converterTemperature = new ConvertF();
-
         } else {
             converterTemperature = new ConvertK();
-
         }
         return converterTemperature;
     }
@@ -43,5 +41,4 @@ public class Converter {
         }
         return inputTemperatureScale();
     }
-
 }
