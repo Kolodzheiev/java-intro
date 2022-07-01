@@ -49,7 +49,7 @@ public class ConsoleUtils {
 
     public static String inString() {
         try {
-            System.out.println("Введіть щось");
+           // System.out.println("Введіть щось");
             return READER.readLine();
         } catch (Exception exception) {
             System.out.println("Error " + exception.getMessage());
